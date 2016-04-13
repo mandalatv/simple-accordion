@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="accordion">
+        <ul>
+          <li><a href="#">Parent</a></li>
+          <li><a href="#">Parent</a></li>
+          <li class="has-submenu">
+           <a href="#">Parent with Subnav</a>
+           <i class="accordion__icon">+</i>
+            <ul>
+              <li><a href="#">Child 1</a></li>
+              <li><a href="#">Child 2</a></li>
+              <li class="has-submenu">
+                <a href="#">Child with Subnav</a>
+                <i class="accordion__icon">+</i>
+                <ul>
+                  <li><a href="#">Grandchild</a></li>
+                  <li><a href="#">Grandchild</a></li>
+                  <li><a href="#">Grandchild</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Parent</a></li>
+          <li><a href="#">Parent</a></li>
+          <li class="has-submenu">
+           <a href="#">Parent with Subnav</a>
+           <i class="accordion__icon">+</i>
+            <ul>
+              <li><a href="#">Child 1</a></li>
+              <li><a href="#">Child 2</a></li>
+            </ul>
+        
+        </ul>
+    </nav>
+  <script src="scripts/jquery-2.2.3.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

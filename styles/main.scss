@@ -1,0 +1,60 @@
+.accordion{
+    background-color: lightgray;
+    
+    ul{
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    li{
+        list-style: none;
+        position: relative;
+    }
+    a{
+        display: block;
+        padding:1em;
+        border-bottom: 1px solid white;
+        &:link, &:visited{
+            background-color: rgba(0,0,0,0.2);
+        }
+        &:hover{
+            color:#fff;
+            background-color:rgba(0,0,0,1); 
+        }
+    }
+    .has-submenu{
+        a{
+            &:hover{
+                color:#fff;
+                background-color:rgba(0,0,0,1); 
+            }
+        }
+        & > ul{
+            transition:all 0.4s ease-out;
+            max-height: 0;
+            overflow-y: hidden;
+        }
+        &.active > ul{
+            max-height: 500px;
+        }
+        & li a{
+            padding:1em 1em 1em 2em;
+        }
+        & li li a{
+            padding:1em 1em 1em 3em;
+        }
+        i.accordion__icon{
+            cursor: pointer;
+            font-style: normal;
+            position: absolute;
+            top:0;
+            right:0;
+            font-size: 1em;
+            padding:1em;
+            width:1em;
+            text-align: center;
+            color:#fff;
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+}
